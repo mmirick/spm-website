@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1e3fb0">
+    <link rel="canonical" href="https://strategicpestmgmt.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Strategic Pest Management — Pest Control in West LA & South Bay | Family-Owned Since 1999</title>
+    <meta name="description" content="Family-owned pest control serving West Los Angeles & the South Bay since 1999. Honest quotes over the phone, same-day response, no contracts. Licensed, bonded & insured. Call or text (310) 322-5001.">
+    <meta property="og:title" content="Strategic Pest Management — Family-Owned Pest Control Since 1999">
+    <meta property="og:description" content="Pest control for West LA & the South Bay. Honest quotes over the phone, same-day response, no contracts. Licensed, bonded & insured.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://strategicpestmgmt.com/">
+    <meta property="og:site_name" content="Strategic Pest Management, Inc.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://strategicpestmgmt.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Strategic Pest Management, Inc. — Family-owned pest control in West LA & the South Bay since 1999.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Strategic Pest Management — Family-Owned Pest Control Since 1999">
+    <meta name="twitter:description" content="Pest control for West LA & the South Bay. Honest quotes over the phone, same-day response, no contracts. Licensed, bonded & insured.">
+    <meta name="twitter:image" content="https://strategicpestmgmt.com/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box;}
+        html{scroll-behavior:smooth;}
+        html,body{margin:0;padding:0;}
+        body{font-family:'Figtree',system-ui,sans-serif;color:#20203a;background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+        a{color:#1e3fb0;text-decoration:none;}
+        a:hover{color:#152d80;}
+        h1,h2,h3,h4{font-family:'Lora',Georgia,serif;margin:0;}
+        input,select,textarea{font-family:'Figtree',sans-serif;}
+        .wrap{max-width:1180px;margin:0 auto;}
+        .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+        .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+        .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:44px;}
+        .navlinks{display:flex;align-items:center;gap:22px;}
+        .navlinks a{color:#4a4863;font-weight:500;font-size:15px;}
+        .navlinks a:hover{color:#1e3fb0;}
+        .navtoggle{display:none;background:none;border:1px solid #d8d6e6;border-radius:8px;width:42px;height:42px;font-size:20px;color:#1e2a6b;cursor:pointer;}
+        .cta{background:#E8A33D;color:#3a2600;font-weight:700;border:none;cursor:pointer;transition:background .18s;}
+        .cta:hover{background:#d9942f;color:#3a2600;}
+        .ghost{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:600;transition:background .18s;}
+        .ghost:hover{background:rgba(255,255,255,.18);color:#fff;}
+        .navcta{background:#E8A33D;color:#3a2600 !important;font-weight:700;font-size:15px;padding:10px 20px;border-radius:8px;transition:background .18s;}
+        .navcta:hover{background:#d9942f;}
+        .chip{background:#f4f5fb;border:1px solid #e6e4f0;color:#33356a;font-weight:600;font-size:15px;padding:9px 18px;border-radius:999px;transition:all .18s;}
+        .chip:hover{background:#1e3fb0;color:#fff;border-color:#1e3fb0;}
+        .svc-card{background:#fff;border:1px solid #e6e4f0;border-radius:16px;padding:32px;transition:all .18s;}
+        .svc-card:hover{box-shadow:0 14px 34px rgba(30,42,107,.12);transform:translateY(-3px);}
+        .faqbtn{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#1a2560;}
+        .faqbtn:hover{color:#1e3fb0;}
+        .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c07f18;margin-bottom:12px;}
+        .eyebrow.on-dark{color:#ffd36b;}
+        .h2{font-size:clamp(28px,4.5vw,40px);font-weight:700;color:#1a2560;margin-bottom:14px;}
+        @media(max-width:960px){
+            .g4{grid-template-columns:repeat(2,1fr);}
+            .g3{grid-template-columns:repeat(2,1fr);}
+        }
+        @media(max-width:820px){
+            .navtoggle{display:flex;align-items:center;justify-content:center;}
+            .navlinks{display:none;position:absolute;top:100%;right:0;left:0;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid #e6e4f0;padding:12px 24px 20px;gap:4px;box-shadow:0 14px 30px rgba(30,42,107,.12);}
+            .navlinks.open{display:flex;}
+            .navlinks a{padding:12px 4px;border-bottom:1px solid #f1f0f7;font-size:16px;}
+            .navlinks a:last-child{border-bottom:none;text-align:center;}
+            .g2{gap:32px;}
+        }
+        @media(max-width:600px){
+            .g4{grid-template-columns:1fr;}
+            .g3{grid-template-columns:1fr;}
+            .g2{grid-template-columns:1fr;}
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Strategic Pest Management, Inc.",
+      "description": "Family-owned pest control serving West Los Angeles and the South Bay since 1999. Honest quotes over the phone, same-day response, no contracts. Licensed, bonded & insured.",
+      "url": "https://strategicpestmgmt.com/",
+      "image": "https://strategicpestmgmt.com/og-image.png",
+      "telephone": "+1-310-322-5001",
+      "email": "strategicpest@aol.com",
+      "faxNumber": "+1-310-322-2697",
+      "foundingDate": "1999",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "postOfficeBoxNumber": "3404",
+        "addressLocality": "El Segundo",
+        "addressRegion": "CA",
+        "postalCode": "90245",
+        "addressCountry": "US"
+      },
+      "areaServed": "West Los Angeles and the South Bay",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "06:00",
+          "closes": "17:00"
+        }
+      ],
+      "slogan": "Creative Solutions"
+    }
+    </script>
+</head>
+<body id="top">
+
+    <!-- Announcement bar -->
+    <div style="background:#152d80;color:#fff;font-size:14px;font-weight:500;text-align:center;padding:9px 20px;">
+        ⚡ Same-Day Response — Call or Text <a href="tel:+13103225001" style="color:#ffd36b;font-weight:700;">(310) 322-5001</a> &nbsp;·&nbsp; Licensed, Bonded &amp; Insured
+    </div>
+
+    <!-- Header -->
+    <header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #e6e4f0;">
+        <div class="wrap" style="position:relative;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;">
+            <a href="#top" style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
+                <svg viewBox="0 0 295 200" width="82" height="56" style="display:block;flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" aria-label="Strategic Pest Management logo"><polygon points="147.5,4.0 169.8,24.7 202.2,11.3 211.1,36.1 248.6,32.1 242.6,57.3 279.6,63.3 259.7,85.0 290.5,100.0 259.7,115.0 279.6,136.7 242.6,142.7 248.6,167.9 211.1,163.9 202.2,188.7 169.8,175.3 147.5,196.0 125.2,175.3 92.8,188.7 83.9,163.9 46.4,167.9 52.4,142.7 15.4,136.7 35.3,115.0 4.5,100.0 35.3,85.0 15.4,63.3 52.4,57.3 46.4,32.1 83.9,36.1 92.8,11.3 125.2,24.7" fill="#1e3fb0"/><text x="147.5" y="88" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="bold"><tspan font-size="34">S</tspan><tspan font-size="26" letter-spacing="1">TRATEGIC</tspan></text><text x="147.5" y="118" text-anchor="middle" fill="#fff" font-size="20" font-family="Georgia,serif" font-weight="bold">Pest Management, Inc.</text><text x="147.5" y="143" text-anchor="middle" fill="#fff" font-size="18" font-family="Georgia,serif" font-style="italic">Creative Solutions</text></svg>
+                <span style="font-family:'Lora',serif;font-weight:700;font-size:21px;color:#1e2a6b;letter-spacing:.01em;">Strategic Pest Management</span>
+            </a>
+            <nav class="navlinks" id="navlinks">
+                <a href="#services">Services</a>
+                <a href="#process">How It Works</a>
+                <a href="#why">Why Us</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="navcta">Get a Quote</a>
+            </nav>
+            <button class="navtoggle" id="navtoggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section style="position:relative;background:linear-gradient(160deg,#1e3fb0 0%,#182f8f 55%,#152878 100%);color:#fff;padding:76px 24px 92px;overflow:hidden;">
+        <div style="position:absolute;inset:0;opacity:.07;background-image:radial-gradient(circle at 1px 1px,#fff 1.5px,transparent 0);background-size:28px 28px;"></div>
+        <div style="position:relative;max-width:900px;margin:0 auto;text-align:center;">
+            <span style="display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#f4ecd6;font-size:13px;font-weight:600;letter-spacing:.04em;padding:7px 16px;border-radius:999px;margin-bottom:26px;">🛡️ Licensed &amp; Insured · Serving the West LA &amp; South Bay Areas Since 1999</span>
+            <h1 style="font-size:clamp(34px,6vw,58px);line-height:1.06;font-weight:700;letter-spacing:-.01em;margin-bottom:22px;">Creative Solutions<br><span style="color:#ffd36b;">Pest-Free Living</span></h1>
+            <p style="font-size:clamp(17px,2.4vw,20px);line-height:1.6;color:#d5daf2;max-width:640px;margin:0 auto 34px;">Family-owned pest control for homes and businesses across the Los Angeles, West LA &amp; South Bay areas. Fast response, honest pricing and treatments that actually work.</p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;">
+                <a href="tel:+13103225001" class="cta" style="font-size:17px;padding:15px 28px;border-radius:10px;box-shadow:0 6px 20px rgba(232,163,61,.4);">📞 Call or Text (310) 322-5001</a>
+                <a href="#contact" class="ghost" style="font-size:17px;padding:15px 28px;border-radius:10px;">Call for Quote</a>
+            </div>
+            <div style="display:flex;gap:10px 26px;justify-content:center;flex-wrap:wrap;color:#e5e8f7;font-size:15px;font-weight:500;">
+                <span>✅ Family Owned Since 1999</span>
+                <span>✅ No Contracts — Cancel Anytime</span>
+                <span>✅ Same-Day Response</span>
+                <span>✅ Pet &amp; Child Safe Options</span>
+            </div>
+            <div style="margin-top:38px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:14px 48px;justify-content:center;flex-wrap:wrap;">
+                <div style="text-align:center;">
+                    <div style="font-family:'Lora',serif;font-weight:700;font-size:28px;color:#fff;line-height:1;"><span style="color:#ffd36b;">★</span> 4.1</div>
+                    <div style="margin-top:6px;font-size:13px;color:#c6ccec;font-weight:500;">Yelp Rating</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-family:'Lora',serif;font-weight:700;font-size:28px;color:#fff;line-height:1;">13+</div>
+                    <div style="margin-top:6px;font-size:13px;color:#c6ccec;font-weight:500;">Yelp Reviews</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-family:'Lora',serif;font-weight:700;font-size:28px;color:#fff;line-height:1;">14</div>
+                    <div style="margin-top:6px;font-size:13px;color:#c6ccec;font-weight:500;">Cities Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section style="padding:0 24px;">
+        <div class="wrap g2" style="max-width:760px;margin:-52px auto 0;position:relative;z-index:2;gap:0;background:#fff;border:1px solid #e6e4f0;border-radius:16px;box-shadow:0 18px 50px rgba(30,42,107,.12);overflow:hidden;">
+            <div style="padding:30px 20px;text-align:center;border-right:1px solid #efeef6;">
+                <div style="font-family:'Lora',serif;font-weight:700;font-size:36px;color:#1e3fb0;line-height:1;">Same-Day</div>
+                <div style="margin-top:8px;font-size:14px;color:#6c6a82;font-weight:500;">Response</div>
+            </div>
+            <div style="padding:30px 20px;text-align:center;">
+                <div style="font-family:'Lora',serif;font-weight:700;font-size:36px;color:#1e3fb0;line-height:1;">24/7</div>
+                <div style="margin-top:8px;font-size:14px;color:#6c6a82;font-weight:500;">Phone Monitored</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pests -->
+    <section style="padding:78px 24px 20px;max-width:1000px;margin:0 auto;text-align:center;">
+        <div class="eyebrow">Pests We Cover</div>
+        <h2 class="h2">What's Bugging You?</h2>
+        <p style="font-size:18px;color:#6c6a82;max-width:600px;margin:0 auto 32px;">Living near the coast comes with uninvited guests. We handle them all.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+            <span class="chip">Rats</span><span class="chip">Mice</span><span class="chip">Cockroaches</span><span class="chip">Water Beetles</span><span class="chip">Ants</span><span class="chip">Silverfish</span><span class="chip">Stored Grain Pests</span><span class="chip">Earwigs</span><span class="chip">Crickets</span><span class="chip">Fleas &amp; Ticks</span><span class="chip">Mites</span><span class="chip">Carpet Beetles</span><span class="chip">Fabric Pests</span><span class="chip">Wasps</span>
+        </div>
+        <p style="font-size:15px;color:#8a879e;margin-top:26px;">Don't see your pest? Call or text — if we can't handle it, we'll point you to someone who can.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" style="padding:78px 24px;background:#f6f7fc;">
+        <div class="wrap">
+            <div style="text-align:center;margin-bottom:48px;">
+                <div class="eyebrow">Our Services</div>
+                <h2 class="h2">Professional Pest Control</h2>
+                <p style="font-size:18px;color:#6c6a82;max-width:640px;margin:0 auto;">Residential, commercial, and industrial. One-time treatments or ongoing plans — never a contract.</p>
+            </div>
+            <div class="g3">
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">🏠</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">Residential Pest Control</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">Complete home protection, inside and out. We treat infestations at the source — with eco-friendly options available. Safe for families and pets.</p></div>
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">🏢</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">Commercial &amp; Industrial</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">Offices, retail, warehouses, and industrial facilities. Regular service plans keep your business pest-free and compliant — without a contract.</p></div>
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">🐀</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">Rodent Control</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">Rats and mice don't just leave on their own. We trap, bait, and seal every entry point. Complete exclusion so they don't come back.</p></div>
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">🔧</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">Exclusion &amp; Vent Repair</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">We repair or rebuild crawl space vents and close openings — sealing your home so rodents and pests stay out for good.</p></div>
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">🔄</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">Ongoing Service Plans</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">Monthly, bi-monthly, or quarterly — pick the schedule that fits your home. No contracts, cancel anytime.</p></div>
+                <div class="svc-card"><div style="width:54px;height:54px;border-radius:12px;background:#eef1fb;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px;">⚡</div><h3 style="font-size:22px;font-weight:600;color:#1a2560;margin-bottom:10px;">One-Time Treatments</h3><p style="font-size:15.5px;line-height:1.6;color:#5c5a72;">Got a specific problem? We'll come out, assess, treat, and follow up. No contracts required. Just results.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" style="padding:78px 24px;">
+        <div class="wrap">
+            <div style="text-align:center;margin-bottom:48px;">
+                <div class="eyebrow">How It Works</div>
+                <h2 class="h2">4 Steps to Pest-Free</h2>
+                <p style="font-size:18px;color:#6c6a82;">Simple process. No surprises. No hidden fees.</p>
+            </div>
+            <div class="g4">
+                <div style="padding:30px 24px;background:#fff;border:1px solid #e6e4f0;border-radius:16px;"><div style="width:46px;height:46px;border-radius:50%;background:#1e3fb0;color:#fff;font-family:'Lora',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">1</div><h3 style="font-size:20px;font-weight:600;color:#1a2560;margin-bottom:10px;">Call or Text</h3><p style="font-size:15px;line-height:1.6;color:#5c5a72;">Call or text (310) 322-5001, or send the form. The phone's monitored 24/7 — you'll hear back same day.</p></div>
+                <div style="padding:30px 24px;background:#fff;border:1px solid #e6e4f0;border-radius:16px;"><div style="width:46px;height:46px;border-radius:50%;background:#1e3fb0;color:#fff;font-family:'Lora',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">2</div><h3 style="font-size:20px;font-weight:600;color:#1a2560;margin-bottom:10px;">Honest Phone Quote</h3><p style="font-size:15px;line-height:1.6;color:#5c5a72;">Tell us what you're seeing and we'll give you a straight quote range right over the phone. On-site looks only when needed.</p></div>
+                <div style="padding:30px 24px;background:#fff;border:1px solid #e6e4f0;border-radius:16px;"><div style="width:46px;height:46px;border-radius:50%;background:#1e3fb0;color:#fff;font-family:'Lora',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">3</div><h3 style="font-size:20px;font-weight:600;color:#1a2560;margin-bottom:10px;">Custom Treatment</h3><p style="font-size:15px;line-height:1.6;color:#5c5a72;">We create a treatment plan tailored to your pest problem, property, and budget. Then we get to work.</p></div>
+                <div style="padding:30px 24px;background:#fff;border:1px solid #e6e4f0;border-radius:16px;"><div style="width:46px;height:46px;border-radius:50%;background:#1e3fb0;color:#fff;font-family:'Lora',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">4</div><h3 style="font-size:20px;font-weight:600;color:#1a2560;margin-bottom:10px;">Follow Up</h3><p style="font-size:15px;line-height:1.6;color:#5c5a72;">We follow up to make sure the problem is solved. If they come back, so do we — guaranteed.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why -->
+    <section id="why" style="padding:78px 24px;background:linear-gradient(160deg,#182f8f,#142672);color:#fff;">
+        <div class="wrap">
+            <div style="text-align:center;margin-bottom:48px;">
+                <div class="eyebrow on-dark">Why Strategic Pest Management</div>
+                <h2 style="font-size:clamp(28px,4.5vw,40px);font-weight:700;margin-bottom:14px;">Your Neighbors Trust Us</h2>
+                <p style="font-size:18px;color:#c6ccec;">Locally owned. Personally operated. We treat your home like our own.</p>
+            </div>
+            <div class="g3">
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">👷</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Family Owned &amp; Operated</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">Our team personally handles every job. No random technicians — consistent, reliable service from people who care.</p></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">🏠</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Born in the South Bay</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">Based in El Segundo since 1999, serving the beach cities, Los Angeles, Beverly Hills and West LA. We know the neighborhood and its pests.</p></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">💰</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Honest Pricing</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">We give you a straight quote up front. No upselling, no surprise charges, no pressure. If we can solve it simply, we will.</p></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">🛡️</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Licensed, Bonded &amp; Insured</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">Fully licensed, bonded, and insured. Your home, family, and pets are in safe professional hands.</p></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">⚡</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Fast Response</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">Same-day response, with the phone monitored 24/7. Call or text anytime — questions, quotes, or scheduling.</p></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:30px;"><div style="font-size:28px;margin-bottom:14px;">✅</div><h3 style="font-size:20px;font-weight:600;color:#fff;margin-bottom:9px;">Satisfaction Guaranteed</h3><p style="font-size:15px;line-height:1.6;color:#c6ccec;">If the pests come back between treatments, so do we — at no extra cost. That's the Strategic promise.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" style="padding:78px 24px;">
+        <div class="wrap">
+            <div style="text-align:center;margin-bottom:48px;">
+                <div class="eyebrow">Customer Reviews</div>
+                <h2 class="h2">What Our Customers Say</h2>
+                <p style="font-size:18px;color:#6c6a82;">Real reviews from your neighbors.</p>
+            </div>
+            <div class="g2" style="gap:22px;">
+                <div style="background:#fff;border:1px solid #e6e4f0;border-radius:16px;padding:28px;display:flex;flex-direction:column;"><div style="color:#E8A33D;font-size:17px;letter-spacing:2px;margin-bottom:14px;">★★★★★</div><p style="font-size:15.5px;line-height:1.65;color:#33356a;flex:1;">"I cannot say enough good things about Rich, Carlos and the whole Strategic Team. Small family owned company, but they are growing! Carlos came out and the roaches are gone! Prices are very fair and these guys stand by their word. A+ Strategic, thank you!"</p><div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #efeef6;padding-top:14px;"><span style="font-weight:700;color:#1a2560;font-size:14.5px;">Verified Customer</span><span style="font-size:13px;color:#8a879e;">via Yelp</span></div></div>
+                <div style="background:#fff;border:1px solid #e6e4f0;border-radius:16px;padding:28px;display:flex;flex-direction:column;"><div style="color:#E8A33D;font-size:17px;letter-spacing:2px;margin-bottom:14px;">★★★★★</div><p style="font-size:15.5px;line-height:1.65;color:#33356a;flex:1;">"We have been using Rich for monthly pest management — ants and spiders specifically — for years. Always responsive, thorough, and honest about what needs to be done. Highly recommend for anyone in the South Bay."</p><div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #efeef6;padding-top:14px;"><span style="font-weight:700;color:#1a2560;font-size:14.5px;">Verified Customer</span><span style="font-size:13px;color:#8a879e;">via Yelp</span></div></div>
+                <div style="background:#fff;border:1px solid #e6e4f0;border-radius:16px;padding:28px;display:flex;flex-direction:column;"><div style="color:#E8A33D;font-size:17px;letter-spacing:2px;margin-bottom:14px;">★★★★★</div><p style="font-size:15.5px;line-height:1.65;color:#33356a;flex:1;">"Quick to respond, fair pricing, and the ants were gone after one treatment. Rich explained everything clearly and didn't try to upsell me on anything I didn't need. Refreshing to deal with an honest company."</p><div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #efeef6;padding-top:14px;"><span style="font-weight:700;color:#1a2560;font-size:14.5px;">Local Homeowner</span><span style="font-size:13px;color:#8a879e;">via Yelp</span></div></div>
+                <div style="background:#fff;border:1px solid #e6e4f0;border-radius:16px;padding:28px;display:flex;flex-direction:column;"><div style="color:#E8A33D;font-size:17px;letter-spacing:2px;margin-bottom:14px;">★★★★★</div><p style="font-size:15.5px;line-height:1.65;color:#33356a;flex:1;">"Had a rat problem in the attic that was driving us crazy. Strategic came out, found the entry points, sealed everything up, and set traps. Problem solved in a week. Worth every penny."</p><div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #efeef6;padding-top:14px;"><span style="font-weight:700;color:#1a2560;font-size:14.5px;">El Segundo Resident</span><span style="font-size:13px;color:#8a879e;">via Yelp</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas -->
+    <section id="areas" style="padding:70px 24px;background:#f6f7fc;">
+        <div style="max-width:820px;margin:0 auto;text-align:center;">
+            <div class="eyebrow">Service Area</div>
+            <h2 style="font-size:clamp(26px,4.2vw,38px);font-weight:700;color:#1a2560;margin-bottom:16px;">Serving the South Bay &amp; West LA</h2>
+            <p style="font-size:19px;line-height:1.6;color:#6c6a82;max-width:620px;margin:0 auto;">From Beverly Hills to Palos Verdes — we've got the West Side covered. Not sure if we reach you? Call or text — if you're close, we'll make it work.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="padding:78px 24px;max-width:820px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:44px;">
+            <div class="eyebrow">FAQ</div>
+            <h2 class="h2">Common Questions</h2>
+            <p style="font-size:18px;color:#6c6a82;">Quick answers to what homeowners ask most.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;" id="faqlist">
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>Do I have to sign a contract?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">Never. We don't lock anyone into contracts — you're free to cancel at any time, no questions asked. We keep customers by doing good work, not with paperwork.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>How much does pest control cost?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">It depends on the pest, the size of your property, and whether you want a one-time treatment or ongoing service. Call or text and describe the problem — for most pests we can give you an honest quote range right over the phone.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>Is the treatment safe for my kids and pets?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">Yes. We use EPA-approved products and offer pet-safe, child-safe, and eco-friendly options. We'll walk you through exactly what we're applying and any precautions.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>How fast can you come out?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">Often we can schedule you the same day. The phone is monitored 24/7, so you'll always hear back quickly — call or text and we'll get you on the calendar. Appointments run Monday through Friday, 6 AM to 5 PM, and we return calls and texts over the weekend.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>Do I need to leave my home during treatment?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">For most treatments, no. Some specific applications may require you to step out for a couple of hours. We'll let you know in advance.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>Do you offer recurring service plans?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">Yes — monthly, bi-monthly, and quarterly plans, plus one-time service. Regular treatments create a barrier around your home that keeps pests out year-round. And there's never a contract — start or stop anytime.</div></div>
+            <div class="faq-item" style="border:1px solid #e6e4f0;border-radius:12px;background:#fff;overflow:hidden;"><button class="faqbtn" aria-expanded="false"><span>What if the pests come back?</span><span class="faq-icon" style="flex-shrink:0;font-size:24px;font-weight:400;color:#1e3fb0;font-family:'Figtree',sans-serif;">+</span></button><div class="faq-a" style="display:none;padding:0 22px 22px;font-size:15.5px;line-height:1.65;color:#5c5a72;">We come back — at no extra charge. If you're on a service plan and see activity between visits, just call and we'll re-treat. That's our guarantee.</div></div>
+        </div>
+    </section>
+
+    <!-- Contact / Quote -->
+    <section id="contact" style="padding:78px 24px;background:linear-gradient(160deg,#1e3fb0,#142672);color:#fff;">
+        <div class="wrap g2" style="max-width:1080px;align-items:start;">
+            <div>
+                <div class="eyebrow on-dark">Got Pests?</div>
+                <h2 style="font-size:clamp(32px,5vw,42px);font-weight:700;line-height:1.1;margin-bottom:18px;">We've Got You.</h2>
+                <p style="font-size:18px;line-height:1.6;color:#ccd2ee;margin-bottom:26px;">Honest quote over the phone. Same-day response. No contracts, ever. Call, text, or send the form.</p>
+                <a href="tel:+13103225001" class="cta" style="display:inline-block;font-size:17px;padding:15px 26px;border-radius:10px;margin-bottom:28px;">📞 Call or Text (310) 322-5001</a>
+                <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:22px 24px;">
+                    <p style="font-size:16px;font-weight:600;color:#fff;margin:0 0 12px;">We're always available.</p>
+                    <p style="font-size:15px;line-height:1.6;color:#d5daf2;margin:0 0 16px;">Call or text anytime to ask questions, talk through the problem, or schedule an appointment.</p>
+                    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;color:#e5e8f7;">
+                        <div><strong style="color:#fff;">Phone &amp; Text</strong> — monitored 24/7</div>
+                        <div><strong style="color:#fff;">Appointments</strong> — Mon–Fri, 6:00 AM – 5:00 PM</div>
+                        <div><strong style="color:#fff;">Weekends</strong> — we return calls &amp; texts</div>
+                        <div style="margin-top:4px;color:#c6ccec;">📧 <a href="mailto:strategicpest@aol.com" style="color:#ffd36b;">strategicpest@aol.com</a> &nbsp;·&nbsp; 📠 (310) 322-2697</div>
+                    </div>
+                </div>
+            </div>
+            <div style="background:#fff;border-radius:18px;padding:32px;box-shadow:0 20px 50px rgba(0,0,0,.25);">
+                <form id="quote-form" action="https://formspree.io/f/placeholder" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#4a4863;">Name<input type="text" name="name" placeholder="Your name" required style="padding:12px 14px;border:1px solid #d8d6e6;border-radius:9px;font-size:15px;color:#20203a;"></label>
+                        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#4a4863;">Phone<input type="tel" name="phone" placeholder="(310) 000-0000" required style="padding:12px 14px;border:1px solid #d8d6e6;border-radius:9px;font-size:15px;color:#20203a;"></label>
+                    </div>
+                    <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#4a4863;">What's the problem?
+                        <select name="pest" style="padding:12px 14px;border:1px solid #d8d6e6;border-radius:9px;font-size:15px;color:#20203a;background:#fff;">
+                            <option>Ants</option><option>Cockroaches</option><option>Rats / Mice</option><option>Wasps</option><option>Fleas / Ticks</option><option>Crickets / Earwigs</option><option>Silverfish / Water Beetles</option><option>Other / Not Sure</option>
+                        </select>
+                    </label>
+                    <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#4a4863;">What are you looking for?
+                        <select name="service_type" style="padding:12px 14px;border:1px solid #d8d6e6;border-radius:9px;font-size:15px;color:#20203a;background:#fff;">
+                            <option>One-Time Treatment</option><option>Monthly Service Plan</option><option>Bi-Monthly Service Plan</option><option>Quarterly Service Plan</option><option>Commercial / Industrial Service</option><option>Not Sure Yet</option>
+                        </select>
+                    </label>
+                    <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#4a4863;">Details
+                        <textarea name="message" rows="3" placeholder="Tell us what you're seeing…" style="padding:12px 14px;border:1px solid #d8d6e6;border-radius:9px;font-size:15px;color:#20203a;resize:vertical;"></textarea>
+                    </label>
+                    <button type="submit" class="cta" style="font-size:16px;padding:15px;border-radius:10px;">Get My Quote →</button>
+                    <p style="font-size:13px;color:#8a879e;text-align:center;margin:0;">We'll get back to you within a few hours — usually same day.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#111436;color:#b4b8d8;padding:56px 24px 30px;">
+        <div class="wrap g3">
+            <div>
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                    <svg viewBox="0 0 295 200" width="76" height="52" style="display:block;flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" aria-label="Strategic Pest Management logo"><polygon points="147.5,4.0 169.8,24.7 202.2,11.3 211.1,36.1 248.6,32.1 242.6,57.3 279.6,63.3 259.7,85.0 290.5,100.0 259.7,115.0 279.6,136.7 242.6,142.7 248.6,167.9 211.1,163.9 202.2,188.7 169.8,175.3 147.5,196.0 125.2,175.3 92.8,188.7 83.9,163.9 46.4,167.9 52.4,142.7 15.4,136.7 35.3,115.0 4.5,100.0 35.3,85.0 15.4,63.3 52.4,57.3 46.4,32.1 83.9,36.1 92.8,11.3 125.2,24.7" fill="#2f52c9"/><text x="147.5" y="88" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="bold"><tspan font-size="34">S</tspan><tspan font-size="26" letter-spacing="1">TRATEGIC</tspan></text><text x="147.5" y="118" text-anchor="middle" fill="#fff" font-size="20" font-family="Georgia,serif" font-weight="bold">Pest Management, Inc.</text><text x="147.5" y="143" text-anchor="middle" fill="#fff" font-size="18" font-family="Georgia,serif" font-style="italic">Creative Solutions</text></svg>
+                    <div style="line-height:1.12;">
+                        <div style="font-family:'Lora',serif;font-weight:700;font-size:17px;color:#fff;">Strategic Pest Management</div>
+                        <div style="font-style:italic;font-size:13px;color:#ffd36b;">"Creative Solutions"</div>
+                    </div>
+                </div>
+                <p style="font-size:14px;line-height:1.6;margin:0 0 12px;">Family-owned pest control serving the South Bay and West LA since 1999. Licensed, bonded &amp; insured — and never a contract.</p>
+                <p style="font-size:14px;margin:0;">P.O. Box 3404, El Segundo, CA 90245</p>
+            </div>
+            <div>
+                <h4 style="color:#fff;font-size:16px;margin-bottom:14px;">Quick Links</h4>
+                <div style="display:flex;flex-direction:column;gap:9px;font-size:14px;">
+                    <a href="#services" style="color:#b4b8d8;">Services</a>
+                    <a href="#areas" style="color:#b4b8d8;">Service Area</a>
+                    <a href="#reviews" style="color:#b4b8d8;">Reviews</a>
+                    <a href="#faq" style="color:#b4b8d8;">FAQ</a>
+                    <a href="#contact" style="color:#b4b8d8;">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 style="color:#fff;font-size:16px;margin-bottom:14px;">Contact</h4>
+                <div style="display:flex;flex-direction:column;gap:9px;font-size:14px;">
+                    <span>📞 <a href="tel:+13103225001" style="color:#ffd36b;font-weight:600;">(310) 322-5001</a> (call or text)</span>
+                    <span>📠 (310) 322-2697</span>
+                    <span>📧 <a href="mailto:strategicpest@aol.com" style="color:#b4b8d8;">strategicpest@aol.com</a></span>
+                    <span style="margin-top:6px;color:#8a8eb5;">Licensed, Bonded &amp; Insured</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrap" style="margin-top:36px;padding-top:20px;border-top:1px solid #262a5a;font-size:13px;color:#7a7ea8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <span>© 2026 Strategic Pest Management, Inc. All rights reserved.</span>
+            <span>Built by <a href="https://yoursitesdone.com" style="color:#b4b8d8;">YourSitesDone.com</a></span>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile nav
+    (function () {
+        var toggle = document.getElementById('navtoggle');
+        var links = document.getElementById('navlinks');
+        toggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        links.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') {
+                links.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+        document.addEventListener('click', function () {
+            if (links.classList.contains('open')) {
+                links.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    })();
+
+    // FAQ accordion (single-open)
+    (function () {
+        var items = document.querySelectorAll('#faqlist .faq-item');
+        items.forEach(function (item) {
+            var btn = item.querySelector('.faqbtn');
+            var ans = item.querySelector('.faq-a');
+            var icon = item.querySelector('.faq-icon');
+            btn.addEventListener('click', function () {
+                var isOpen = ans.style.display === 'block';
+                items.forEach(function (other) {
+                    other.querySelector('.faq-a').style.display = 'none';
+                    other.querySelector('.faq-icon').textContent = '+';
+                    other.querySelector('.faqbtn').setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    ans.style.display = 'block';
+                    icon.textContent = '−';
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+
+    // PREVIEW ONLY: graceful form handler until the Formspree endpoint is wired. Remove when action= is a live endpoint.
+    (function () {
+        var form = document.getElementById('quote-form');
+        if (form && form.getAttribute('action').indexOf('placeholder') !== -1) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) { form.reportValidity(); return; }
+                form.innerHTML = '<div style="text-align:center;padding:40px 16px;">' +
+                    '<div style="font-size:44px;margin-bottom:12px;">✅</div>' +
+                    '<h3 style="font-size:22px;font-weight:700;color:#1a2560;margin-bottom:8px;">Sent — we\'ll be in touch!</h3>' +
+                    '<p style="color:#5c5a72;font-size:15px;">Prefer to talk now? Call or text <a href="tel:+13103225001" style="color:#1e3fb0;font-weight:700;">(310) 322-5001</a>.</p>' +
+                    '</div>';
+            });
+        }
+    })();
+    </script>
+
+</body>
+</html>
