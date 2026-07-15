@@ -164,7 +164,7 @@
             <h1 style="font-size:clamp(34px,6vw,58px);line-height:1.06;font-weight:700;letter-spacing:-.01em;margin-bottom:22px;">Creative Solutions<br><span style="color:#ffd36b;">Pest-Free Living</span></h1>
             <p style="font-size:clamp(17px,2.4vw,20px);line-height:1.6;color:#d5daf2;max-width:640px;margin:0 auto 34px;">Family-owned pest control for homes and businesses across the Los Angeles, West LA &amp; South Bay areas. Fast response, honest pricing and treatments that actually work.</p>
             <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;">
-                <a href="tel:+13103225001" class="cta" style="font-size:17px;padding:15px 28px;border-radius:10px;box-shadow:0 6px 20px rgba(232,163,61,.4);">📞 Call or Text (310) 322-5001</a>
+                <a href="tel:+13103225001" class="cta ct-open" style="font-size:17px;padding:15px 28px;border-radius:10px;box-shadow:0 6px 20px rgba(232,163,61,.4);">📞 Call or Text (310) 322-5001</a>
                 <a href="#contact" class="ghost" style="font-size:17px;padding:15px 28px;border-radius:10px;">Request Quote</a>
             </div>
             <div style="display:flex;gap:10px 26px;justify-content:center;flex-wrap:wrap;color:#e5e8f7;font-size:15px;font-weight:500;">
@@ -321,7 +321,7 @@
                 <div class="eyebrow on-dark">Got Pests?</div>
                 <h2 style="font-size:clamp(32px,5vw,42px);font-weight:700;line-height:1.1;margin-bottom:18px;">We've Got You.</h2>
                 <p style="font-size:18px;line-height:1.6;color:#ccd2ee;margin-bottom:26px;">Honest quote over the phone. Same-day response. No contracts, ever. Call, text, or send the form.</p>
-                <a href="tel:+13103225001" class="cta" style="display:inline-block;font-size:17px;padding:15px 26px;border-radius:10px;margin-bottom:28px;">📞 Call or Text (310) 322-5001</a>
+                <a href="tel:+13103225001" class="cta ct-open" style="display:inline-block;font-size:17px;padding:15px 26px;border-radius:10px;margin-bottom:28px;">📞 Call or Text (310) 322-5001</a>
                 <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:22px 24px;">
                     <p style="font-size:16px;font-weight:600;color:#fff;margin:0 0 12px;">We're always available.</p>
                     <p style="font-size:15px;line-height:1.6;color:#d5daf2;margin:0 0 16px;">Call or text anytime to ask questions, talk through the problem, or schedule an appointment.</p>
@@ -397,6 +397,20 @@
             <span>Built by <a href="https://yoursitesdone.com" style="color:#b4b8d8;">YourSitesDone.com</a></span>
         </div>
     </footer>
+
+    <!-- Call or Text chooser -->
+    <div id="contact-modal" role="dialog" aria-modal="true" aria-label="Call or text Strategic Pest Management" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(20,26,58,.55);align-items:center;justify-content:center;padding:20px;">
+        <div style="background:#fff;border-radius:18px;max-width:360px;width:100%;padding:28px 24px;box-shadow:0 24px 60px rgba(0,0,0,.35);text-align:center;">
+            <div style="font-family:'Lora',serif;font-weight:700;font-size:20px;color:#1a2560;margin-bottom:6px;">Call or Text Us</div>
+            <a href="tel:+13103225001" style="display:block;font-family:'Lora',serif;font-weight:700;font-size:27px;color:#1e3fb0;line-height:1.1;">(310) 322-5001</a>
+            <div style="font-size:13px;color:#8a879e;margin:6px 0 22px;">Monitored 24/7 · same-day response</div>
+            <div style="display:flex;gap:12px;">
+                <a href="tel:+13103225001" class="cta" style="flex:1;font-size:16px;padding:13px;border-radius:10px;">📞 Call</a>
+                <a href="sms:+13103225001?&body=Hi%2C%20I%27d%20like%20to%20get%20a%20pest%20control%20quote." style="flex:1;font-size:16px;padding:13px;border-radius:10px;background:#eef1fb;color:#1e3fb0;font-weight:700;border:1px solid #dfe4f6;">💬 Text</a>
+            </div>
+            <button type="button" id="contact-modal-close" style="margin-top:18px;background:none;border:none;color:#8a879e;font-size:14px;cursor:pointer;">Close</button>
+        </div>
+    </div>
 
     <script>
     // Mobile nav
@@ -479,6 +493,19 @@
                 form.appendChild(p);
             }
         });
+    })();
+
+    // Call-or-Text chooser modal
+    (function () {
+        var modal = document.getElementById('contact-modal');
+        if (!modal) return;
+        function openModal(e) { if (e) e.preventDefault(); modal.style.display = 'flex'; }
+        function closeModal() { modal.style.display = 'none'; }
+        document.querySelectorAll('.ct-open').forEach(function (b) { b.addEventListener('click', openModal); });
+        modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+        var x = document.getElementById('contact-modal-close');
+        if (x) x.addEventListener('click', closeModal);
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
     })();
     </script>
 
